@@ -7,7 +7,7 @@
     Análise dos Dados disponibilizados pela Olist no Kaggle
   </p>
   <p align="center">
-    Os dados usados se encontram no <a href="[http://dados.prefeitura.sp.gov.br/dataset/dados-do-sp156](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce?select=product_category_name_translation.csv)">Kaggle</a>.
+    Os dados usados se encontram no <a href="https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce?select=product_category_name_translation.csv">Kaggle</a>.
   </p>
 </div>
 
@@ -25,6 +25,7 @@
     <li><a href="#iniciar-o-projeto">Iniciar o Projeto</a></li>
     <li><a href="#case-de-negócio">Case de Negócio</a></li>
     <li><a href="#preparação-dos-dados">Preparação dos Dados</a></li>
+    <li><a href="#análise-dos-dados">Análise dos Dados</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
@@ -57,21 +58,33 @@ Para realizar este projeto, foi usado as seguintes ferramenta:
 
 
 ## Case de Negócio
-
-
 A empresa de e-commerce está interessada em lançar uma nova linha de relógios. Antes de fazer o lançamento, a empresa decidiu conduzir um estudo de mercado e precificação para estabelecer um valor mais lucrativo e competitivo para seus produtos.
 
 Para isso, foi realizada uma análise detalhada do mercado, examinando os preços mais comumente praticados e os produtos mais vendidos. Essa avaliação fornecerá insights valiosos para a definição dos preços da nossa nova linha de relógios.
 
 
-## Preparação dos Dados
 
+## Preparação dos Dados
 Após importar os dados no Power BI, é crucial estabelecer os relacionamentos entre as tabelas. Essa etapa desempenha um papel fundamental e tem impacto direto nos resultados.
 
 Com base em uma análise e consulta no modelo relacional fornecido pela Olist, foram efetuados os relacionamentos necessários.
 
 ![Modelo Relacional no Power BI](https://github.com/DemikFR/Analise-de-Preco-Mercado/assets/102700735/3ae6c3cd-6d7c-42f2-ae9d-95a9b1b8a2ca)
 
+
+
+## Análise dos Dados
+
+Agora que os dados foram modelados e disponibilizados, será possível começar a extrair insights e conhecimento sobre os preços de relógios no mercado em estudo.
+
+Inicialmente, foi realizada uma análise dos preços gerais, identificando os valores mais comuns e as faixas de preço predominantes. Em seguida, foi realizada uma análise com base nas vendas para obter uma compreensão mais aprofundada.
+
+Todos os relatórios foram filtrados com base na Categoria do Produto, usando o filtro "Relógios_presentes" para selecionar os produtos semelhantes àquele que a empresa pretende lançar.
+
+
+### Análise Geral dos Preços
+
+O objetivo dessa análise é identificar os preços mais populares entre os clientes do mercado. Além disso, foi analisada a distribuição e a média anual das vendas, bem como identificar a tendência do ano seguinte.
 
 
 
