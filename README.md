@@ -76,7 +76,7 @@ Após importar os dados no Power BI, é crucial estabelecer os relacionamentos e
 
 Com base em uma análise e consulta no modelo relacional fornecido pela Olist, foram efetuados os relacionamentos necessários.
 
-![Modelo Relacional no Power BI](https://github.com/DemikFR/Analise-de-Preco-Mercado/assets/102700735/3ae6c3cd-6d7c-42f2-ae9d-95a9b1b8a2ca)
+![Modelo Relacional no Power BI](https://github.com/DemikFR/Analise-de-Preco-Mercado/assets/102700735/eca546e4-8494-43bb-a982-aaf98d241711)
 
 
 
@@ -95,7 +95,8 @@ O objetivo dessa análise é identificar os preços mais populares entre os clie
 
 Primeiramente, realizou-se uma análise utilizando um gráfico de boxplot com o objetivo de examinar a dispersão dos dados e identificar possíveis valores discrepantes. Além disso, procurou-se obter informações sobre os intervalos de preços nos quais os relógios estão mais concentrados.
 
-![image](https://github.com/DemikFR/Analise-de-Preco-Mercado/assets/102700735/f80b4acf-8cf8-4df2-8137-3ae30d4d9d1c)
+![Boxplot](https://github.com/DemikFR/Analise-de-Preco-Mercado/assets/102700735/934dac3c-0104-4664-830c-1ef7c7a84cff)
+
 
 Durante a análise, foram identificados vários valores discrepantes (outliers) nos preços, variando de menos de 50.000 até mais de 100.000, com uma média de 20.000. A fim de melhorar a precisão da análise, decidiu-se considerar apenas os produtos com preços inferiores a 70.000, uma vez que essa faixa concentra a maior quantidade de produtos e também está alinhada com a linha de produtos que a empresa pretende lançar, cujos valores não ultrapassarão esse limite.
 
@@ -117,7 +118,8 @@ Por fim, um gráfico de linha foi criado para identificar a média de preços ao
 
 Relatório concluído:
 
-![Relatorio 1](https://github.com/DemikFR/Analise-de-Preco-Mercado/assets/102700735/e401884e-ba6c-4c79-8a41-6ecc6a6b0782)
+![Relatorio 1](https://github.com/DemikFR/Analise-de-Preco-Mercado/assets/102700735/de01ac9d-af65-4da8-8aa0-a2cffa214e19)
+
 
 
 ### Análise dos Preços com Vendas
@@ -166,14 +168,16 @@ DIVIDE(
 
 O relatório concluido:
 
-![Relatorio_2](https://github.com/DemikFR/Analise-de-Preco-Mercado/assets/102700735/d8006120-78a3-47c3-b926-2a041338e28b)
+![Relatorio_2](https://github.com/DemikFR/Analise-de-Preco-Mercado/assets/102700735/d8e4f25a-4611-4836-b9e9-c462c562d978)
+
 
 
 ### Conclusão e Recomendação do Preço
 
 Para concluir a análise, foi criada uma página final no Power BI, com o intuito de apresentar e comunicar os resultados aos stakeholders envolvidos no projeto. Essa página final serve como um resumo visual das principais descobertas e insights obtidos durante a análise dos dados.
 
-![Relatório 3 - Conclusão](https://github.com/DemikFR/Analise-de-Preco-Mercado/assets/102700735/49a37003-c109-47c5-88e3-6e10894729e3)
+![Relatório 3 - Conclusão](https://github.com/DemikFR/Analise-de-Preco-Mercado/assets/102700735/5f96297a-d49c-4430-8201-7f5dfd31fdda)
+
 
 Foi criado um arquivo no formato Power Point para realizar a apresentação completa da análise realizada. O objetivo desse arquivo é reunir de forma organizada e visualmente atraente todas as informações relevantes, insights e conclusões obtidas durante o processo de análise de dados.
 
