@@ -84,9 +84,53 @@ Todos os relatórios foram filtrados com base na Categoria do Produto, usando o 
 
 ### Análise Geral dos Preços
 
-O objetivo dessa análise é identificar os preços mais populares entre os clientes do mercado. Além disso, foi analisada a distribuição e a média anual das vendas, bem como identificar a tendência do ano seguinte.
+O objetivo dessa análise é identificar os preços mais populares entre os clientes do mercado. Além disso, foi analisada a distribuição e a média anual das vendas, bem como a tendência do ano seguinte.
 
+Primeiramente, realizou-se uma análise utilizando um gráfico de boxplot com o objetivo de examinar a dispersão dos dados e identificar possíveis valores discrepantes. Além disso, procurou-se obter informações sobre os intervalos de preços nos quais os relógios estão mais concentrados.
 
+![image](https://github.com/DemikFR/Analise-de-Preco-Mercado/assets/102700735/f80b4acf-8cf8-4df2-8137-3ae30d4d9d1c)
+
+Durante a análise, foram identificados vários valores discrepantes (outliers) nos preços, variando de menos de 50.000 até mais de 100.000, com uma média de 20.000. A fim de melhorar a precisão da análise, decidiu-se considerar apenas os produtos com preços inferiores a 70.000, uma vez que essa faixa concentra a maior quantidade de produtos e também está alinhada com a linha de produtos que a empresa pretende lançar, cujos valores não ultrapassarão esse limite.
+
+Em seguida, foram calculadas a mediana e a média por meio da fórmula DAX abaixo. Esses cálculos fornecerão insights sobre os valores que despertaram mais interesse no perfil de cliente analisado, permitindo uma melhor compreensão dos seus padrões de preferência.
+
+```julia
+mediana_preco = 
+CALCULATE(
+  MEDIAN(olist_order_items_dataset[price]), olist_order_items_dataset[price] < 70000)
+
+media_preco = 
+CALCULATE(
+  AVERAGE(olist_order_items_dataset[price]), olist_order_items_dataset[price] < 70000)
+```
+
+Além disso, a fim de obter uma compreensão mais abrangente dos dados, foram utilizadas duas fórmulas DAX adicionais para determinar a quantidade de valores acima e abaixo de 10 mil dólares (valor base definido durante a análise). 
+
+```julia
+% faixa_maior_10_mil = 
+DIVIDE(
+    CALCULATE(
+        COUNT(olist_order_items_dataset[order_id]), 
+                olist_order_items_dataset[price] > 10000
+        ),
+    COUNTROWS(olist_order_items_dataset)
+    )
+
+% faixa_menor_10_mil = 
+DIVIDE(
+    CALCULATE(
+        COUNT(olist_order_items_dataset[order_id]), 
+                olist_order_items_dataset[price] <= 10000
+        ),
+    COUNTROWS(olist_order_items_dataset)
+    )
+```
+
+Por fim, um gráfico de linha foi criado para identificar a média de preços ao longo dos anos, com o objetivo principal de determinar se houve variação ou aumento nos preços dos produtos vendidos. Além disso, esse gráfico permite visualizar tendências e fazer projeções para o próximo ano com base nos dados analisados.
+
+Relatório concluído:
+
+![image](https://github.com/DemikFR/Analise-de-Preco-Mercado/assets/102700735/e401884e-ba6c-4c79-8a41-6ecc6a6b0782)
 
 <!-- LICENSE -->
 ## License
