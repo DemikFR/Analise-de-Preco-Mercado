@@ -117,7 +117,11 @@ Por fim, um gráfico de linha foi criado para identificar a média de preços ao
 
 Relatório concluído:
 
+<<<<<<< HEAD
 ![Relatorio 1](https://github.com/DemikFR/Analise-de-Preco-Mercado/assets/102700735/e401884e-ba6c-4c79-8a41-6ecc6a6b0782)
+=======
+![image](https://github.com/DemikFR/Analise-de-Preco-Mercado/assets/102700735/e401884e-ba6c-4c79-8a41-6ecc6a6b0782)
+>>>>>>> 831ec513a2896966e48748e1aca42a85a53b48c1
 
 
 ### Análise dos Preços com Vendas
@@ -167,6 +171,7 @@ DIVIDE(
 O relatório concluido:
 
 ![Relatorio_2](https://github.com/DemikFR/Analise-de-Preco-Mercado/assets/102700735/d8006120-78a3-47c3-b926-2a041338e28b)
+<<<<<<< HEAD
 
 
 ### Conclusão e Recomendação do Preço
@@ -176,6 +181,8 @@ Para concluir a análise, foi criada uma página final no Power BI, com o intuit
 ![Relatório 3 - Conclusão](https://github.com/DemikFR/Analise-de-Preco-Mercado/assets/102700735/49a37003-c109-47c5-88e3-6e10894729e3)
 
 Foi criado um arquivo no formato Power Point para realizar a apresentação completa da análise realizada. O objetivo desse arquivo é reunir de forma organizada e visualmente atraente todas as informações relevantes, insights e conclusões obtidas durante o processo de análise de dados.
+=======
+>>>>>>> 831ec513a2896966e48748e1aca42a85a53b48c1
 
 
 
