@@ -104,6 +104,37 @@ CALCULATE(
   AVERAGE(olist_order_items_dataset[price]), olist_order_items_dataset[price] < 70000)
 ```
 
+
+
+Por fim, um gráfico de linha foi criado para identificar a média de preços ao longo dos anos, com o objetivo principal de determinar se houve variação ou aumento nos preços dos produtos vendidos. Além disso, esse gráfico permite visualizar tendências e fazer projeções para o próximo ano com base nos dados analisados.
+
+Relatório concluído:
+
+![image](https://github.com/DemikFR/Analise-de-Preco-Mercado/assets/102700735/e401884e-ba6c-4c79-8a41-6ecc6a6b0782)
+
+
+### Análise dos Preços com Vendas
+
+Esta análise tem como objetivo identificar e compreender o comportamento das vendas em relação aos diferentes intervalos de preços, bem como determinar quais faixas de preço são as mais vendidas.
+
+Foi determinado que seriam criadas seis faixas de preços, variando de 1 a 30.000 (sendo que preços acima de 30.000 serão agrupados na faixa "30.000+"), com intervalos de 5.000 entre elas. Para realizar essa tarefa, foi necessário adicionar uma nova coluna que recebe uma fórmula específica, a fim de identificar a qual faixa de preço cada registro pertence. Com a inclusão dessa nova coluna, foi possível gerar um gráfico de barras que apresenta os cinco preços com maior número de produtos vendidos.
+
+```julia
+faixa_preco = 
+VAR price = olist_order_items_dataset[price]
+RETURN
+    SWITCH(
+        TRUE(),
+        INT(price / 5000) = 0, "1-5000",
+        INT(price / 5000) = 1, "5001-10000",
+        INT(price / 5000) = 2, "10001-15000",
+        INT(price / 5000) = 3, "15001-20000",
+        INT(price / 5000) = 4, "20001-25000",
+        INT(price / 5000) = 5, "25001-30000",
+        "30000+"
+    )
+```
+
 Além disso, a fim de obter uma compreensão mais abrangente dos dados, foram utilizadas duas fórmulas DAX adicionais para determinar a quantidade de valores acima e abaixo de 10 mil dólares (valor base definido durante a análise). 
 
 ```julia
@@ -126,11 +157,11 @@ DIVIDE(
     )
 ```
 
-Por fim, um gráfico de linha foi criado para identificar a média de preços ao longo dos anos, com o objetivo principal de determinar se houve variação ou aumento nos preços dos produtos vendidos. Além disso, esse gráfico permite visualizar tendências e fazer projeções para o próximo ano com base nos dados analisados.
+O relatório concluido:
 
-Relatório concluído:
+![Relatorio_2](https://github.com/DemikFR/Analise-de-Preco-Mercado/assets/102700735/d8006120-78a3-47c3-b926-2a041338e28b)
 
-![image](https://github.com/DemikFR/Analise-de-Preco-Mercado/assets/102700735/e401884e-ba6c-4c79-8a41-6ecc6a6b0782)
+
 
 <!-- LICENSE -->
 ## License
